@@ -1,5 +1,5 @@
 // Service Worker — Calculadora de 1RM
-// ⚠️  Cada vez que subas una nueva versión a Netlify, cambiá el número de abajo (v2 → v3 → v4...)
+
 const CACHE_NAME = '1rm-app-v3';
 const ASSETS = [
   './',
