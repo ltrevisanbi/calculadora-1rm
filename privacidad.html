@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidad — Calculadora de 1RM</title>
+  <meta name="theme-color" content="#0d1424"/>
+  <style>
+    :root {
+      --bg: #0d1424;
+      --surface: #172035;
+      --surface2: #1e2a45;
+      --accent: #e85d04;
+      --accent2: #f48c06;
+      --blue: #3b82f6;
+      --text: #e8eaf0;
+      --text-muted: #7a8099;
+      --border: #2d3d5a;
+      --radius: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    /* Header */
+    .pp-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 28px 24px 24px;
+      text-align: center;
+    }
+    .pp-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      text-decoration: none;
+    }
+    .pp-brand .badge {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+    .pp-brand .name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .pp-header h1 {
+      font-size: clamp(20px, 5vw, 28px);
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .pp-header .date {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Content */
+    .pp-content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+    }
+
+    .pp-intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .pp-intro strong { color: var(--text); }
+
+    .pp-section {
+      margin-bottom: 28px;
+    }
+    .pp-section h2 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--accent2);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .pp-section h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 16px;
+      background: var(--accent);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .pp-section p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    .pp-footer {
+      max-width: 680px;
+      margin: 40px auto 0;
+      padding: 0 24px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+    .pp-footer p { font-size: 13px; color: var(--text-muted); }
+    .pp-footer a {
+      color: var(--blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .pp-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      padding: 10px 20px;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .pp-back:hover { border-color: var(--accent); color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<div class="pp-header">
+  <a class="pp-brand" href="/">
+    <span class="badge">1RM</span>
+    <span class="name">Calculadora de 1RM</span>
+  </a>
+  <h1>Política de Privacidad</h1>
+  <div class="date">Vigente desde mayo de 2026</div>
+</div>
+
+<div class="pp-content">
+
+  <div class="pp-intro">
+    <strong>Resumen:</strong> La app Calculadora de 1RM no recopila, almacena ni transmite ningún dato personal a servidores externos. Toda la información que ingresás queda únicamente en tu dispositivo.
+  </div>
+
+  <div class="pp-section">
+    <h2>1. Información que recopilamos</h2>
+    <p>La aplicación Calculadora de 1RM no recopila, almacena ni transmite ningún dato personal a servidores externos. Toda la información que el usuario ingresa —nombre, edad, peso corporal, registros de entrenamiento y diario de sesiones— se guarda exclusivamente en el almacenamiento local del dispositivo (localStorage del navegador).</p>
+  </div>
+
+  <div class="pp-section">
+    <h2>2. Uso de los datos</h2>
+    <p>Los datos ingresados son utilizados únicamente para el funcionamiento de las funcionalidades de la aplicación dentro del propio dispositivo. En ningún momento son accedidos, procesados ni compartidos por el desarrollador ni por terceros.</p>
+  </div>
+
+  <div class="pp-section">
+    <h2>3. Servicios de terceros</h2>
+    <p>La aplicación no utiliza servicios de análisis, publicidad, rastreo ni ninguna integración con plataformas de terceros que implique la recopilación de datos del usuario.</p>
+  </div>
+
+  <div class="pp-section">
+    <h2>4. Permisos</h2>
+    <p>La aplicación puede solicitar acceso a las funciones de compartir del dispositivo (Web Share API) únicamente cuando el usuario lo activa voluntariamente para compartir sus resultados de entrenamiento. No se solicitan permisos de cámara, micrófono, ubicación ni contactos.</p>
+  </div>
+
+  <div class="pp-section">
+    <h2>5. Eliminación de datos</h2>
+    <p>El usuario puede eliminar todos sus datos en cualquier momento borrando los datos de la aplicación desde la configuración del navegador, o desinstalando la app del dispositivo. No existe ningún dato almacenado en servidores que requiera solicitud de eliminación.</p>
+  </div>
+
+  <div class="pp-section">
+    <h2>6. Menores de edad</h2>
+    <p>La aplicación no está dirigida específicamente a menores de 13 años. No recopila información personal de ninguna persona, incluidos menores.</p>
+  </div>
+
+  <div class="pp-section">
+    <h2>7. Cambios a esta política</h2>
+    <p>Cualquier cambio en esta política de privacidad será comunicado mediante una actualización de la aplicación. Se recomienda revisar esta página periódicamente.</p>
+  </div>
+
+  <div class="pp-section">
+    <h2>8. Contacto</h2>
+    <p>Para consultas sobre esta política de privacidad, podés contactar al desarrollador a través de los siguientes medios:</p>
+    <br>
+    <p>
+      LinkedIn: <a href="https://www.linkedin.com/in/lucas-trevisan-77330178/" target="_blank" rel="noopener" style="color:var(--blue)">Lucas Trevisan</a><br>
+      Instagram: <a href="https://www.instagram.com/lucas_trevi/" target="_blank" rel="noopener" style="color:#e1306c">@lucas_trevi</a>
+    </p>
+  </div>
+
+</div>
+
+<div class="pp-footer">
+  <p>© 2026 Lucas Trevisan · Calculadora de 1RM</p>
+  <a class="pp-back" href="/">← Volver a la app</a>
+</div>
+
+</body>
+</html>
