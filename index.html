@@ -3505,7 +3505,13 @@ let diaryView = 'week';
 let diaryAnchor = todayStr(); // YYYY-MM-DD anchor for current period
 let editingSessionId = null;  // null = new, number = editing existing
 
-function todayStr() { return new Date().toISOString().slice(0,10); }
+function todayStr() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
 
 function dFmt(d) {
   // dd/mm/yyyy for diary display (avoids clash with existing fmtDate)
